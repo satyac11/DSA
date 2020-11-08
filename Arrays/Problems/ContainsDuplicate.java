@@ -4,6 +4,17 @@ import java.util.*;
 
 public class ContainsDuplicate {
 
+    static boolean containsDuplicate(int[] nums) {
+        Set<Integer> set = new HashSet<>();
+        for(int i=0;i<nums.length;i++){
+            if(set.contains(nums[i]))
+                return true;
+            else
+                set.add(nums[i]);
+        }
+        return false;
+    }
+
     static boolean containsDuplicates(int []nums){
         Map<Integer,Integer> map = new HashMap<>();
 
@@ -18,7 +29,8 @@ public class ContainsDuplicate {
     }
 
     public static void main(String args[]){
-        int []nums = {1,2,3,4};
+        int []nums = {1,2,3,1};
+        System.out.println(containsDuplicate(nums));
         System.out.println("Contains Duplicates: "+containsDuplicates(nums));
     }
 }

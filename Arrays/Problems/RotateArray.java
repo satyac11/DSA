@@ -22,8 +22,9 @@ public class RotateArray {
 
     //Solution 2
     public static void rotate1(int nums[], int k){
-        int [] temp = new int[nums.length];
         int n = nums.length;
+        int [] temp = new int[n];
+
         for(int i=0;i<n;i++){
             temp[(i+k)%n] = nums[i];
         }
