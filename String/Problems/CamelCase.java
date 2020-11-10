@@ -1,4 +1,4 @@
-package String.String.Problems;
+package String.Problems;
 
 
 /*Alice wrote a sequence of words in CamelCase as a string of letters, , having the following properties:

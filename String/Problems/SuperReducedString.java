@@ -1,4 +1,4 @@
-package String.String.Problems;
+package String.Problems;
 
 
 /*

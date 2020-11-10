@@ -1,7 +1,5 @@
-package String.String.Problems;
+package String.Problems;
 
-
-import java.util.regex.PatternSyntaxException;
 
 /*criteria:
 

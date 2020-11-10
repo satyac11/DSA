@@ -1,6 +1,4 @@
-package String.String.Problems;
-
-import java.util.Arrays;
+package String.Problems;
 
 public class CycleLeaderIteration {
 
