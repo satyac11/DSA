@@ -97,6 +97,32 @@ public class CountAndSay {
 
     }
 
+    //Best and simplet Solution from others
+    public String countAndSay1(int n) {
+        String str="1";
+        for(int i=2; i<=n; i++) {
+            StringBuilder temp= new StringBuilder();
+            char prev=str.charAt(0);
+            int counter=1;
+            for(int j=1; j<str.length(); j++) {
+                char ch=str.charAt(j);
+                if(ch != prev) {
+                    temp.append(counter);
+                    temp.append(prev);
+                    counter=1;
+                    prev=ch;
+                }else {
+                    counter++;
+                }
+            }
+            temp.append(counter);
+            temp.append(prev);
+            str=temp.toString();
+        }
+
+        return str;
+    }
+
     public static void main(String[] args) {
         System.out.println("Count And Say: "+countAndSay(6));
 

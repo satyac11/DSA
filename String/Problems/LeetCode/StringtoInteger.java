@@ -69,7 +69,7 @@ public class StringtoInteger {
         else if(!isNumeric(c))
             return 0;
         else
-            out = c -'0';
+            out = c -'0';//"character - 48(0 ascii value)"
 
         for(int i=1;i<s.length();i++){
             char c1 = s.charAt(i);
@@ -113,12 +113,12 @@ public class StringtoInteger {
     public static void main(String[] args) {
         String s = "  -42";
         //s= "4193 with words";
-       s="words and 987";
+       //s="words and 987";
         //s="-91283472332";
        // s = "2147483649";
         //s="-91283472332";
         //s="   +0 123";
-        s="-2147483647";
+        //s="-2147483647";
 
         System.out.println("String Integer Conversio: "+myAtoi(s));
 
