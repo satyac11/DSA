@@ -45,7 +45,6 @@ public class Graph {
 					visited[i]=true;
 					hasChild=true;
 					break;
-					
 				}
 			}
 			if(!hasChild)

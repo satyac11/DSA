@@ -26,21 +26,21 @@ public class BinaryTree {
         if(r!= null){
             postOrderRecursiveTraversal(r.left);
             postOrderRecursiveTraversal(r.right);
-            System.out.printf("%d ",r.data);
+            System.out.printf("%d ",r.val);
         }
     }
 
     public void inOrderRecursiveTraversal(TreeNode r){
         if(r!= null){
             inOrderRecursiveTraversal(r.left);
-            System.out.printf("%d ",r.data);
+            System.out.printf("%d ",r.val);
             inOrderRecursiveTraversal(r.right);
         }
     }
 
     public void preOrderRecursiveTraversal(TreeNode r){
         if(r!= null){
-            System.out.printf("%d ",r.data);
+            System.out.printf("%d ",r.val);
             preOrderRecursiveTraversal(r.left);
             preOrderRecursiveTraversal(r.right);
         }

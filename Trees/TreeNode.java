@@ -2,21 +2,28 @@ package Trees;
 
 public class TreeNode {
 
-    int data;
-    TreeNode left,right;
+    int val;
+    TreeNode left, right;
 
-    public TreeNode(int data) {
-        this.data = data;
-        left = null;
-        right = null;
+    TreeNode() {
     }
 
-    public int getData() {
-        return data;
+    TreeNode(int val) {
+        this.val = val;
     }
 
-    public void setData(int data) {
-        this.data = data;
+    public TreeNode(int val, TreeNode left, TreeNode right) {
+        this.val = val;
+        this.left = left;
+        this.right = right;
+    }
+
+    public int getVal() {
+        return val;
+    }
+
+    public void setVal(int val) {
+        this.val = val;
     }
 
     public TreeNode getLeft() {
