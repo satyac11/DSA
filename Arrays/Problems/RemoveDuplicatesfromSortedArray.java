@@ -75,7 +75,7 @@ public class RemoveDuplicatesfromSortedArray {
     }*/
 
     public static void main(String []args){
-        int []nums = {};
+        int []nums = {2, 3, 3, 3, 6, 9, 9};
         System.out.println("length: "+removeDuplicates(nums));
     }
 }
