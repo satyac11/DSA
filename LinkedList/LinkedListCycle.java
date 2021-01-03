@@ -43,7 +43,7 @@ public class LinkedListCycle {
     public static boolean hasCycle1(ListNode head) {
         ListNode slow = head;
         ListNode fast = head;
-        while(slow != null && fast != null && fast.next != null) {
+        while(fast != null && fast.next != null) {
             slow = slow.next;
             fast = fast.next.next;
             if(slow == fast) {
