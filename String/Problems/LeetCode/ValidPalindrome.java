@@ -37,17 +37,23 @@ public class ValidPalindrome {
 
     //Best Solution
 
+    static boolean isAlphaNumeric(char c) {
+        if (c >= 'A' && c <= 'Z' || c >= 'a' && c <= 'z' || c>='0' && c<='9')
+            return true;
+        return false;
+    }
+
     //using no libraries
     public static boolean isPalindrome2(String s) {
         int i = 0, j = s.length() - 1;
         s= s.toLowerCase();
         while (i < j) {
-            if (!isAlpha(s.charAt(i)))
+            if (!isAlphaNumeric(s.charAt(i)))
                 i++;
-            if (!isAlpha(s.charAt(j)))
+            if (!isAlphaNumeric(s.charAt(j)))
                 j--;
 
-            if (isAlpha(s.charAt(i)) && isAlpha(s.charAt(j))) {
+            if (isAlphaNumeric(s.charAt(i)) && isAlphaNumeric(s.charAt(j))) {
                 if (s.charAt(i) != s.charAt(j))
                     return false;
                 i++;
@@ -57,12 +63,6 @@ public class ValidPalindrome {
 
         }
         return true;
-    }
-
-    static boolean isAlpha(char c) {
-        if (c >= 'A' && c <= 'Z' || c >= 'a' && c <= 'z' || c>='0' && c<='9')
-            return true;
-        return false;
     }
 
 

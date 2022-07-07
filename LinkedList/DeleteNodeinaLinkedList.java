@@ -49,16 +49,16 @@ public class DeleteNodeinaLinkedList {
 
     public static void deleteNode(ListNode node) {
 
-        if(node.next != null){
+        if (node.next != null) {
             node.val = node.next.val;
             node.next = node.next.next;
         }
 
     }
 
-    static void printList(ListNode head){
+    static void printList(ListNode head) {
         ListNode pointer = head;
-        while(pointer != null){
+        while (pointer != null) {
             System.out.println(pointer.val);
             pointer = pointer.next;
         }
@@ -68,16 +68,17 @@ public class DeleteNodeinaLinkedList {
         ListNode head;
         ListNode node1 = new ListNode(-3);
         ListNode node2 = new ListNode(-5);
-        ListNode node3= new ListNode(-99);
-        //ListNode node4= new ListNode(4);
-        //ListNode node4 = new ListNode();
+        ListNode node3 = new ListNode(-99);
+        ListNode node4 = new ListNode(4);
+        ListNode node5 = new ListNode(5);
         head = node1;
         node1.next = node2;
         node2.next = node3;
-       node3.next = null;
-        //node4.next = null;
+        node3.next = node4;
+        node4.next = node5;
+        node5.next = null;
 
-        deleteNode(node1);
+        deleteNode(node2);
 
         printList(head);
 

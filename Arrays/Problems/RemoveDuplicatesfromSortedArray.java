@@ -59,7 +59,7 @@ public class RemoveDuplicatesfromSortedArray {
             }
         }
         System.out.println("Unique Array: "+ Arrays.toString(nums));
-        return nums.length;
+        return index+1;
     }
     /*#Solution by Author
     public int removeDuplicates(int[] nums) {

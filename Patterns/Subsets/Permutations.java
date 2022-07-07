@@ -6,9 +6,9 @@ public class Permutations {
 
     static List<List<Integer>> findPermutations(int[]nums){
         List<List<Integer>> permutations = new LinkedList<>();
-        permutations.add(new ArrayList<>());
-        for(int num:nums){
-            int n = permutations.size();
+            permutations.add(new ArrayList<>());
+            for(int num:nums){
+                int n = permutations.size();
             for(int i=0;i<n;i++){
                 List<Integer> oldPerm = permutations.get(0);
                 int permSize = oldPerm.size();
@@ -46,10 +46,10 @@ public class Permutations {
     }
 
     public static void main(String[] args) {
-        /*System.out.println(findPermutations(new int[]{1,3,5}));
-        System.out.println(findPermutations(new int[]{1,2,3}));*/
+        System.out.println(findPermutations(new int[]{1,3,5}));
+        /*System.out.println(findPermutations(new int[]{1,2,3}));
         System.out.println(findPermutations2(new int[]{1,3,5}));
-        System.out.println(findPermutations2(new int[]{1,2,3}));
+        System.out.println(findPermutations2(new int[]{1,2,3}));*/
 
     }
 }

@@ -7,7 +7,7 @@ public class CeilingOfNumber {
         if(key>array[array.length-1])
             return -1;
         while(start<=end){
-             mid = start +(end-start)/2;
+            mid = start +(end-start)/2;
             if(key == array[mid])
                 return mid;
             if(key<array[mid])
